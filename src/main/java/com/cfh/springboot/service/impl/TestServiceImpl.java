@@ -15,4 +15,9 @@ public class TestServiceImpl implements TestService {
     public User selectByPrimaryKey(int id) {
         return userMapper.selectByPrimaryKey(id);
     }
+
+    @Override
+    public void deleteByPrimaryKey(int id) {
+        userMapper.deleteByPrimaryKey(id);
+    }
 }
