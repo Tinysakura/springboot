@@ -8,6 +8,15 @@ mybatis:
   typeAliasesPackage: com.cfh.springboot.pojo
   mapperLocations: classpath:mappers/*.xml
 
+jedis :
+  pool :
+    host : 119.23.111.185
+    port : 6379
+    config :
+      maxTotal: 100
+      maxIdle: 10
+      maxWaitMillis : 100000
+
 
 ---
 
@@ -22,3 +31,13 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
+
+
+  jedis :
+    pool :
+      host : 119.23.111.185
+      port : 6379
+      config :
+        maxTotal: 100
+        maxIdle: 10
+        maxWaitMillis : 100000
