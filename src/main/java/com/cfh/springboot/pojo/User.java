@@ -22,7 +22,6 @@ public class User {
      * This method returns the value of the database column user.id
      *
      * @return the value of user.id
-     *
      * @mbggenerated
      */
     public Integer getId() {
@@ -34,7 +33,6 @@ public class User {
      * This method sets the value of the database column user.id
      *
      * @param id the value for user.id
-     *
      * @mbggenerated
      */
     public void setId(Integer id) {
@@ -46,7 +44,6 @@ public class User {
      * This method returns the value of the database column user.name
      *
      * @return the value of user.name
-     *
      * @mbggenerated
      */
     public String getName() {
@@ -58,7 +55,6 @@ public class User {
      * This method sets the value of the database column user.name
      *
      * @param name the value for user.name
-     *
      * @mbggenerated
      */
     public void setName(String name) {

@@ -12,12 +12,12 @@ public class HelloWorldController {
     private TestService testService;
 
     @RequestMapping("/helloworld")
-    public String helloworld(){
+    public String helloworld() {
         return "hello world";
     }
 
     @RequestMapping("/testmybatis")
-    public User testmybatis(int id){
+    public User testmybatis(int id) {
         return testService.selectByPrimaryKey(id);
     }
 }

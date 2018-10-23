@@ -25,7 +25,7 @@ public class RedisClient<T> {
         }
     }
 
-    public String get(String key) throws Exception  {
+    public String get(String key) throws Exception {
 
         Jedis jedis = null;
         try {

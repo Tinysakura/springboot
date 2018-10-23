@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.transaction.annotation.Transactional;
 
 @SpringBootApplication
 @ComponentScan("com.cfh.springboot")
@@ -14,9 +15,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 //开启缓存
 @EnableCaching
+@Transactional
 public class SpringbootApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringbootApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootApplication.class, args);
+    }
 }

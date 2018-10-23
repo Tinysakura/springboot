@@ -10,31 +10,22 @@ public class TestRedis extends SpringbootApplicationTests {
     private RedisClient redisClient = new RedisClient();
 
     @Test
-    public void testSet(){
+    public void testSet() {
         try {
-            redisClient.set("key1","xjf");
+            redisClient.set("key1", "xjf");
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     @Test
-    public void testGet(){
+    public void testGet() {
         try {
             System.out.println(redisClient.get("key1"));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
-
-
-
-
-
-
-
-
 
 
 }
