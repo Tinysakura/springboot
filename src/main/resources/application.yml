@@ -78,3 +78,19 @@ spring:
         maxTotal: 100
         maxIdle: 10
         maxWaitMillis : 100000
+
+mail:
+  smtp:
+    auth: true
+    port: 465
+    timeout: 5000
+  transport:
+    protocol: smtp
+  send:
+    charset: UTF-8
+  is:
+    ssl: true
+  host: smtp.163.com
+  auth:
+    name: tinysakurac@163.com
+    password: 19981002520qq
